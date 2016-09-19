@@ -1,0 +1,62 @@
+﻿@model UserRegisterViewModel
+@{
+    Layout = "~/Views/Shared/Master.cshtml";
+    ViewBag.Title = "注册";
+}
+<div class="build_body">
+    <div>
+        <ol class="breadcrumb margin-bottom-10"> <li><a href="@Url.Action("Index", "Home")">首页</a></li><li> <strong>注册</strong> </li> </ol>
+    </div>
+    <div>
+        @using (Html.BeginForm("Register", "User", FormMethod.Post, new { @id = "register-form", @class = "form-horizontal" }))
+        {
+            <div class="form-group">
+                @Html.LabelFor(x => x.Type, new { @class = "col-sm-3 control-label" })
+                <div class="col-sm-8">
+                    <label class="radio-inline">
+                        @Html.RadioButtonFor(x => x.Type, UserType.Student, new { @checked = "checked" })学员（请家教）
+                    </label>
+                    <label class="radio-inline">
+                        @Html.RadioButtonFor(x => x.Type, UserType.Tutor)教员（做家教）
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.Name, new { @class = "col-sm-3 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Name)
+                </div>
+                <span>我们将对外保密</span>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.Email, new { @class = "col-sm-3 control-label" })
+                <div class="col-sm-8">
+                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Email)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.Password, new { @class = "col-sm-3 control-label" })
+                <div class="col-sm-8">
+                    @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Password)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.ConfimPassword, new { @class = "col-sm-3 control-label" })
+                <div class="col-sm-8">
+                    @Html.PasswordFor(x => x.ConfimPassword, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ConfimPassword)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3 "></div>
+                <div class="col-sm-8 ">
+                    <button type="submit" class="btn btn-info">注册</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

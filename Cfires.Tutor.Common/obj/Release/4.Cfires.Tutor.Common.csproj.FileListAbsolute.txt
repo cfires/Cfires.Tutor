@@ -1,0 +1,11 @@
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\Cfires.Tutor.Common.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\Cfires.Tutor.Common.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\NPOI.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\NPOI.OOXML.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\NPOI.OpenXml4Net.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\NPOI.OpenXmlFormats.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Release\NPOI.xml
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\obj\Release\Cfires.Tutor.Common.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\obj\Release\Cfires.Tutor.Common.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\obj\Release\4.Cfires.Tutor.Common.csprojResolveAssemblyReference.cache

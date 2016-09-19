@@ -1,0 +1,4 @@
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Debug\Cfires.Tutor.Common.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\bin\Debug\Cfires.Tutor.Common.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\obj\Debug\Cfires.Tutor.Common.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Common\obj\Debug\Cfires.Tutor.Common.pdb

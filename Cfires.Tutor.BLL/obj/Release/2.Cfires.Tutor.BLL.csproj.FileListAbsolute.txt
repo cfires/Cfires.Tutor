@@ -1,0 +1,10 @@
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\Cfires.Tutor.BLL.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\Cfires.Tutor.BLL.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\Cfires.Tutor.DAL.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\Cfires.Tutor.Model.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\NPoco.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\Cfires.Tutor.DAL.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\bin\Release\Cfires.Tutor.Model.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\obj\Release\2.Cfires.Tutor.BLL.csprojResolveAssemblyReference.cache
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\obj\Release\Cfires.Tutor.BLL.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.BLL\obj\Release\Cfires.Tutor.BLL.pdb

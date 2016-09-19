@@ -1,0 +1,62 @@
+﻿@model UserLoginViewModel
+@{
+    Layout = "~/Views/Shared/Master.cshtml";
+    ViewBag.Title = "登录";
+
+}
+
+<div class="build_body">
+    <div>
+        <ol class="breadcrumb margin-bottom-10"> <li><a href="@Url.Action("Index", "Home")">首页</a></li><li> <strong>登录</strong> </li> </ol>
+    </div>
+    @using (Html.BeginForm("Login", "User", FormMethod.Post, new { @id = "login-form", @class = "form-horizontal" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(x => x.Email, new { @class = "col-sm-3 control-label" })
+            <div class="col-sm-8">
+                @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Email)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Password, new { @class = "col-sm-3 control-label" })
+            <div class="col-sm-8">
+                @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Password)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Captcha, new { @class = "col-sm-3 control-label" })
+            <div class="col-sm-8">
+                @Html.TextBoxFor(x => x.Captcha, new { @class = "form-control"})
+                @Html.ValidationMessageFor(x => x.Captcha)
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-8">
+                <img id="captcha-img" src="@Url.Action("ShowCaptcha","Common",new { id = 1})" style="float:left;height:24px" />
+                &nbsp;
+                <a id="changeCaptcha">看不清，换一张</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3 "></div>
+            <div class="col-sm-1 ">
+                <button type="submit" class="btn btn-info">登录</button>
+            </div>
+            <div class="col-sm-6 regDes">
+                <p>
+                    <a href="@Url.Action("Register","User")" class="link2">还不是会员？立即注册，填写资料</a>
+                </p>
+            </div>
+        </div>
+    }
+</div>
+<script>
+    $("#changeCaptcha").on("click", function () {
+        $("#captcha-img").attr("src", $("#captcha-img").attr("src") + 1);
+    });
+</script>

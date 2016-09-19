@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Default.css" rel="stylesheet" />
+    <link href="~/Content/hplus_extend.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbox">
+            <div id="Header1_divLogin" class="box_1">
+                您好！欢迎来到阳光家教网！
+                <a href="@Url.Action("Login","User")">请登录</a> |
+                <a href="@Url.Action("Register","User")">免费注册</a>
+            </div>
+            <div class="box_2">
+                <div class="fav">
+                    <div class="tel">
+                        全国投诉专线：<span>15064800635</span>
+                    </div>
+                    <span>&nbsp;|&nbsp;<a href="javascript:window.external.addFavorite('http://www.ygjj.com/','阳光家教网')">收藏本站</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="logo">
+            <h1><a href="@Url.Action("Index", "Home")"><img src="~/img/logo.png" tppabs="http://qd.ygjj.com/images/logo.png" border="0" /></a></h1>
+        </div>
+        <div class="city">
+            <h3>
+                青岛
+            </h3>
+            <span><a href="#" tppabs="http://www.ygjj.com/">[切换城市]</a></span>
+        </div>
+        <div class="cityTel" style='display:none'>
+            <span>青岛热线电话</span>
+            <p>
+                400-700-7788
+            </p>
+        </div>
+        <div class="info2"><p class="txt">阳光家教已有<span id="Header1_teacherCount" class="num">543141</span>名注册教员<br />帮助了<span id="Header1_studentCount" class="num">170757</span>名家长找家教</p></div>
+    </div>
+    <div class="navBar">
+        <div class="navBox">
+            <div class="classBox">
+                <div class='class'>
+                    <a href="index.htm" tppabs="http://qd.ygjj.com/"><font color="#ffffff">青岛家教</font></a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="@Url.Action("Index","TutorsMath")" class=''>数学家教</a></li>
+                    <li><a href="@Url.Action("Index","TutorsEnglish")" class=''>英语家教</a></li>
+                    <li><a href="@Url.Action("Index","Tutors")" class=''>家教价格</a></li>
+                    <li><a href="@Url.Action("Index","Tutors")" class=''>教员库</a></li>
+                    <li><a href="@Url.Action("Index","Students")" class=''>学员库</a></li>
+                    <li><a href="@Url.Action("Index","TutorsMath")" class=''>家教学堂</a></li>
+                    <li><a href="@Url.Action("Index","TutorsMath")" class=''>个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+</body>
+</html>

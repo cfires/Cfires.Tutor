@@ -1,0 +1,10 @@
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\Itcast.CMS.BLL.dll
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\Itcast.CMS.BLL.pdb
+E:\project\Itcast.CMS\Itcast.CMS.BLL\obj\Debug\Itcast.CMS.BLL.csprojResolveAssemblyReference.cache
+E:\project\Itcast.CMS\Itcast.CMS.BLL\obj\Debug\Itcast.CMS.BLL.dll
+E:\project\Itcast.CMS\Itcast.CMS.BLL\obj\Debug\Itcast.CMS.BLL.pdb
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\Itcast.CMS.DAL.dll
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\Itcast.CMS.Model.dll
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\NPoco.dll
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\Itcast.CMS.DAL.pdb
+E:\project\Itcast.CMS\Itcast.CMS.BLL\bin\Debug\Itcast.CMS.Model.pdb

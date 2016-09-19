@@ -1,0 +1,6 @@
+E:\project\Cfires.Tutor\Cfires.Tutor.Model\bin\Release\Cfires.Tutor.Model.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Model\bin\Release\Cfires.Tutor.Model.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.Model\bin\Release\NPoco.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Model\obj\Release\Cfires.Tutor.Model.dll
+E:\project\Cfires.Tutor\Cfires.Tutor.Model\obj\Release\Cfires.Tutor.Model.pdb
+E:\project\Cfires.Tutor\Cfires.Tutor.Model\obj\Release\5.Cfires.Tutor.Model.csprojResolveAssemblyReference.cache

@@ -1,25 +1,59 @@
 ﻿using Cfires.Tutor.BLL;
 using Cfires.Tutor.Common;
 using Cfires.Tutor.Model;
-using Cfires.Tutor.WebApp.Controllers.Base;
 using Cfires.Tutor.WebApp.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
 namespace Cfires.Tutor.WebApp.Controllers
 {
-    public class UserController : CustomControllerBase
+    public class UserController : BaseController
     {
         public UserController() { }
 
         UserService _userService = new UserService();
 
+        private ApplicationSignInManager _signInManager;
+        private ApplicationUserManager _userManager;
+
+        public UserController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        {
+            UserManager = userManager;
+            SignInManager = signInManager;
+        }
+
+        public ApplicationSignInManager SignInManager
+        {
+            get
+            {
+                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
+            }
+            private set
+            {
+                _signInManager = value;
+            }
+        }
+
+        public ApplicationUserManager UserManager
+        {
+            get
+            {
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            }
+            private set
+            {
+                _userManager = value;
+            }
+        }
+
+
+        #region 登录
         /// <summary>
         /// 登录
         /// </summary>
@@ -72,31 +106,42 @@ namespace Cfires.Tutor.WebApp.Controllers
                 return View();
             }
         }
+        #endregion
 
+        #region 注册
         /// <summary>
         /// 注册
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult Register()
+        public ActionResult Register(string returnUrl = null)
         {
             return View();
         }
 
-        /// <summary>
-        /// 注册表单提交
-        /// </summary>
-        /// <returns></returns>
         [HttpPost]
-        public ActionResult Register(UserRegisterViewModel viewModel)
+        [AllowAnonymous]
+        public async Task<ActionResult> Register(UserRegisterViewModel model, string returnUrl = null)
         {
             if (ModelState.IsValid)
             {
-                _userService.Create(viewModel.AsUser());
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var result = await UserManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                    _userService.Create(model.AsUser());
+
+                    return RedirectToLocal(returnUrl);
+                }
+                AddErrors(result);
             }
 
-            return RedirectToAction("Index", "Home");
+            // 如果我们进行到这一步时某个地方出错，则重新显示表单
+            return View(model);
         }
+
+        #endregion
 
         /// <summary>
         /// 验证待注册邮箱是否已被注册
@@ -126,6 +171,14 @@ namespace Cfires.Tutor.WebApp.Controllers
             identity.AddClaim(new Claim(ClaimTypes.Role, user.Type.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.Type.ToString()));
             AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, identity);
+        }
+
+        private void AddErrors(IdentityResult result)
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error);
+            }
         }
 
         /// <summary>

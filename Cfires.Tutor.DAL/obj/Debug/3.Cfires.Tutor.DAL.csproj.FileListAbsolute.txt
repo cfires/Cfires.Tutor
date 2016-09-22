@@ -9,3 +9,11 @@ E:\project\Cfires.Tutor\Cfires.Tutor.DAL\obj\Debug\Cfires.Tutor.DAL.pdb
 E:\project\Cfires.Tutor\Itcast.CMS.DAL\obj\Debug\3.Cfires.Tutor.DAL.csprojResolveAssemblyReference.cache
 E:\project\Cfires.Tutor\Itcast.CMS.DAL\obj\Debug\Cfires.Tutor.DAL.dll
 E:\project\Cfires.Tutor\Itcast.CMS.DAL\obj\Debug\Cfires.Tutor.DAL.pdb
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\bin\Debug\Cfires.Tutor.DAL.dll
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\bin\Debug\Cfires.Tutor.DAL.pdb
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\bin\Debug\Cfires.Tutor.Model.dll
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\bin\Debug\NPoco.dll
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\bin\Debug\Cfires.Tutor.Model.pdb
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\obj\Debug\3.Cfires.Tutor.DAL.csprojResolveAssemblyReference.cache
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\obj\Debug\Cfires.Tutor.DAL.dll
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.DAL\obj\Debug\Cfires.Tutor.DAL.pdb

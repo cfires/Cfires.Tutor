@@ -8,17 +8,17 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Cfires.Tutor.WebApp.Controllers.Base
+namespace Cfires.Tutor.WebApp.Controllers
 {
     /// <summary>
     ///  Controller基类
     /// </summary>
-    public class CustomControllerBase : Controller
+    public class BaseController : Controller
     {
         /// <summary>
         /// 构造函数
         /// </summary>
-        public CustomControllerBase()
+        public BaseController()
             : base()
         {
             this.ValidateRequest = false;
@@ -61,7 +61,7 @@ namespace Cfires.Tutor.WebApp.Controllers.Base
                     case UserType.Student:
                     case UserType.Tutor:
                     default:
-                        userInfo = _userService.GetById(userID);
+                        userInfo = _userService.Get(userID);
                         break;
                 }
 

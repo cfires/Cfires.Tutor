@@ -26,6 +26,9 @@ namespace Cfires.Tutor.Model
         [Column("Email")]
         public string Email { get; set; }
 
+        [Column("Enabled")]
+        public bool Enabled { get; set; }
+
         [Column("CreateDate")]
         public DateTime CreateDate { get; set; }
     }

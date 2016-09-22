@@ -13,9 +13,9 @@ namespace Cfires.Tutor.BLL
     {
         UserRepository _userRepostory = new UserRepository();
 
-        public Base_User GetById(int id)
+        public Base_User Get(int id)
         {
-            return _userRepostory.GetById(id);
+            return _userRepostory.Get(id);
         }
 
         public Base_User GetByEmail(string email)
@@ -27,14 +27,17 @@ namespace Cfires.Tutor.BLL
         {
             user.CreateDate = DateTime.Now;
             user.Password = SecurityHelper.EncryptAES(user.Password);
+            user.Enabled = true;
             _userRepostory.Insert(user);
         }
 
         #region 用户管理
 
-        public IEnumerable<Base_User> GetUserList()
+        public IEnumerable<Base_User> GetUserList(int pageIndex, int pageSize)
         {
-            return _userRepostory.GetUserList();
+            int start = (pageIndex - 1) * pageSize + 1;
+            int end = pageIndex * pageSize;
+            return _userRepostory.GetList(start, end);
         }
         #endregion
     }

@@ -12,9 +12,9 @@ namespace Cfires.Tutor.WebApp.Controllers
         UserService _userService = new UserService();
 
         // GET: ManageUser
-        public ActionResult Index()
+        public ActionResult Index(int pageIndex = 1)
         {
-            var userList = _userService.GetUserList();
+            var userList = _userService.GetUserList(pageIndex, 20);
             return View();
         }
     }

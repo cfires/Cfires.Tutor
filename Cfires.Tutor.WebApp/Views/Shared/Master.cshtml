@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@{
+    //获取当前用户名
+    var userName = "游客";
+    if (CurrentUser != null)
+    {
+        userName = CurrentUser.Name;
+    }
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -18,9 +26,13 @@
     <div class="topbar">
         <div class="topbox">
             <div id="Header1_divLogin" class="box_1">
-                您好！欢迎来到阳光家教网！
-                <a href="@Url.Action("Login","User")">请登录</a> |
-                <a href="@Url.Action("Register","User")">免费注册</a>
+                @userName
+                欢迎来到阳光家教网！
+                @if (CurrentUser == null)
+                {
+                    <a href="@Url.Action("Login", "User")"> 请登录 </a>
+                    <a href="@Url.Action("Register", "User")"> 免费注册 </a>
+                }
             </div>
             <div class="box_2">
                 <div class="fav">

@@ -1,5 +1,6 @@
 ﻿using Cfires.Tutor.BLL;
 using Cfires.Tutor.Model;
+using Cfires.Tutor.WebApp.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,7 @@ namespace Cfires.Tutor.WebApp.Mvc
         {
             get
             {
-                var user = new UserService().GetByEmail(User.Identity.Name);
-                return user;
+                return ((BaseController)this.ViewContext.Controller).CurrentUser;
             }
         }
     }

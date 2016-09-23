@@ -125,18 +125,6 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\obj\Debug\1.Cfires.Tutor.WebApp.cspro
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\obj\Debug\Cfires.Tutor.WebApp.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\obj\Debug\Cfires.Tutor.WebApp.pdb
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\ApplicationInsights.config
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\csc.exe
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\System.Collections.Immutable.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\System.Reflection.Metadata.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\vbc.exe
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\VBCSCompiler.exe
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\roslyn\VBCSCompiler.exe.config
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Cfires.Tutor.WebApp.dll.config
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Cfires.Tutor.WebApp.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Cfires.Tutor.WebApp.pdb
@@ -158,7 +146,6 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.ApplicationInsights.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AspNet.Identity.Core.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Owin.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Owin.Host.SystemWeb.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Owin.Security.Cookies.dll
@@ -169,7 +156,6 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Owin.Security.Microsoft
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Owin.Security.OAuth.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Owin.Security.Twitter.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.Web.Infrastructure.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Newtonsoft.Json.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Owin.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.Helpers.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.Mvc.dll
@@ -178,7 +164,6 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.Razor.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.WebPages.Deployment.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.WebPages.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.WebPages.Razor.dll
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\WebGrease.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Cfires.Tutor.DAL.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\NPOI.OOXML.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\NPoco.dll
@@ -196,7 +181,6 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AI.ServerTelemetryChann
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AI.Web.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AI.WindowsServer.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.ApplicationInsights.xml
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.Helpers.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.Mvc.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.Optimization.xml
@@ -205,7 +189,6 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.WebPages.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.WebPages.Deployment.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\System.Web.WebPages.Razor.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Antlr3.Runtime.pdb
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Newtonsoft.Json.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\EntityFramework.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\EntityFramework.SqlServer.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.WebApp\bin\Microsoft.AspNet.Identity.Core.xml

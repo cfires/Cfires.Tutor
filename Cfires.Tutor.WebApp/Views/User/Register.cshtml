@@ -8,6 +8,7 @@
         <ol class="breadcrumb margin-bottom-10"> <li><a href="@Url.Action("Index", "Home")">首页</a></li><li> <strong>注册</strong> </li> </ol>
     </div>
     <div>
+        @Html.ValidationSummary(false)
         @using (Html.BeginForm("Register", "User", FormMethod.Post, new { @id = "register-form", @class = "form-horizontal" }))
         {
             <div class="form-group">

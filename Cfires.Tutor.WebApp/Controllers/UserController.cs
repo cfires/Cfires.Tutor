@@ -2,13 +2,9 @@
 using Cfires.Tutor.Common;
 using Cfires.Tutor.Model;
 using Cfires.Tutor.WebApp.Models;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System;
 using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Cfires.Tutor.WebApp.Controllers
@@ -18,40 +14,6 @@ namespace Cfires.Tutor.WebApp.Controllers
         public UserController() { }
 
         UserService _userService = new UserService();
-
-        private ApplicationSignInManager _signInManager;
-        private ApplicationUserManager _userManager;
-
-        public UserController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
-        {
-            UserManager = userManager;
-            SignInManager = signInManager;
-        }
-
-        public ApplicationSignInManager SignInManager
-        {
-            get
-            {
-                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
-            }
-            private set
-            {
-                _signInManager = value;
-            }
-        }
-
-        public ApplicationUserManager UserManager
-        {
-            get
-            {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            }
-            private set
-            {
-                _userManager = value;
-            }
-        }
-
 
         #region 登录
         /// <summary>
@@ -83,11 +45,8 @@ namespace Cfires.Tutor.WebApp.Controllers
 
             string captcha = Session["captcha"] == null ? string.Empty : Session["captcha"].ToString();
             Session["captcha"] = null;
-            if (string.IsNullOrWhiteSpace(captcha))
-            {
-                ModelState.AddModelError("Captcha", "请填写验证码");
-            }
-            else if (viewModel.Captcha.Equals(captcha, StringComparison.InvariantCultureIgnoreCase))
+
+            if (viewModel.Captcha.Equals(captcha, StringComparison.InvariantCultureIgnoreCase))
             {
                 ModelState.AddModelError("Captcha", "验证码错误");
             }
@@ -121,24 +80,18 @@ namespace Cfires.Tutor.WebApp.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<ActionResult> Register(UserRegisterViewModel model, string returnUrl = null)
+        public ActionResult Register(UserRegisterViewModel viewModel, string returnUrl = null)
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                    _userService.Create(model.AsUser());
-
-                    return RedirectToLocal(returnUrl);
-                }
-                AddErrors(result);
+                _userService.Create(viewModel.AsUser());
+                var user = _userService.GetByEmail(viewModel.Email);
+                Login(user);
+                return RedirectToAction("Index", "Home");
             }
 
             // 如果我们进行到这一步时某个地方出错，则重新显示表单
-            return View(model);
+            return View(viewModel);
         }
 
         #endregion
@@ -166,19 +119,11 @@ namespace Cfires.Tutor.WebApp.Controllers
         private void Login(Base_User user)
         {
             var identity = new ClaimsIdentity("App");
-            identity.AddClaim(new Claim(ClaimTypes.Name, user.Name));
+            identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.Role, user.Type.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.Type.ToString()));
             AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, identity);
-        }
-
-        private void AddErrors(IdentityResult result)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error);
-            }
         }
 
         /// <summary>

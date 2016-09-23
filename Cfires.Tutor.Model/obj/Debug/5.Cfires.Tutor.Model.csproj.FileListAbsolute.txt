@@ -13,3 +13,4 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.Model\bin\Debug\Cfires.Tutor.Model.pdb
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.Model\bin\Debug\NPoco.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.Model\obj\Debug\Cfires.Tutor.Model.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.Model\obj\Debug\Cfires.Tutor.Model.pdb
+E:\Cfires\Cfires.Tutor\Cfires.Tutor.Model\obj\Debug\5.Cfires.Tutor.Model.csprojResolveAssemblyReference.cache

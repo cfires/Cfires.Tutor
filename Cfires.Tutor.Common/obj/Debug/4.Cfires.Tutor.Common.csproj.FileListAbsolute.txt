@@ -38,4 +38,3 @@ E:\Cfires\Cfires.Tutor\Cfires.Tutor.Common\bin\Debug\System.Web.Mvc.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.Common\bin\Debug\System.Web.Mvc.Extensions.xml
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.Common\obj\Debug\Cfires.Tutor.Common.dll
 E:\Cfires\Cfires.Tutor\Cfires.Tutor.Common\obj\Debug\Cfires.Tutor.Common.pdb
-E:\Cfires\Cfires.Tutor\Cfires.Tutor.Common\obj\Debug\4.Cfires.Tutor.Common.csprojResolveAssemblyReference.cache

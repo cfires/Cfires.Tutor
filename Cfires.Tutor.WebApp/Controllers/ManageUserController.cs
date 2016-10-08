@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace Cfires.Tutor.WebApp.Controllers
 {
-    public class ManageUserController : Controller
+    public class ManageUserController : BaseController
     {
         UserService _userService = new UserService();
 
